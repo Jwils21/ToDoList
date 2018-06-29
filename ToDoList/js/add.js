@@ -9,10 +9,11 @@ function create() {
         Id: 0,
         Name: document.getElementById("pName").value,
         Completed: false,
+        UserId:1
     };
 
     //creating the task based on the information we put in the task variable above
-    $.post("http://localhost:49997/Lists/Create/", task)
+    $.post("http://localhost:59378/Lists/Create/", task)
         .done(function (resp) {
             console.log(resp);
         });

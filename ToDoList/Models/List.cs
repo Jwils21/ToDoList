@@ -11,7 +11,7 @@ namespace ToDoList.Models {
 		[StringLength(100)]
 		public string Name { get; set; }
 		[Required]
-		public string UserId { get; set; }
+		public int UserId { get; set; }
 		public virtual User User { get; set; }
 		[Required]
 		public bool Completed { get; set; } = false;

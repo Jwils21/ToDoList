@@ -204,6 +204,10 @@
     <Compile Include="Migrations\201806291621132_built controllers.Designer.cs">
       <DependentUpon>201806291621132_built controllers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806291917231_fixed list model.cs" />
+    <Compile Include="Migrations\201806291917231_fixed list model.Designer.cs">
+      <DependentUpon>201806291917231_fixed list model.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\List.cs" />
     <Compile Include="Models\ToDoListDbContext.cs" />
@@ -303,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201806291621132_built controllers.resx">
       <DependentUpon>201806291621132_built controllers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806291917231_fixed list model.resx">
+      <DependentUpon>201806291917231_fixed list model.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

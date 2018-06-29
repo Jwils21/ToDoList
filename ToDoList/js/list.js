@@ -3,10 +3,11 @@
 "option strict"
 
 function loaded() {
-    $.getJSON("http://localhost:49997/Lists/List")
+    $.getJSON("http://localhost:59378/Lists/List")
         .done(function (resp) {
             console.log(resp);
             display(resp.Data);
+            listIt = resp;
         });
 }
 
@@ -29,7 +30,7 @@ function completed(task) {
         Completed: task.Completed
     };
 
-    $.post("http://localhost:49997/Lists/Remove/", item)
+    $.post("http://localhost:59378/Lists/Remove/", item)
         .done(function (resp) {
             console.log(resp);
         });
