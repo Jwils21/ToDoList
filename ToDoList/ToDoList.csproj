@@ -200,11 +200,16 @@
     <Compile Include="Migrations\201806291608520_Added users and lists.Designer.cs">
       <DependentUpon>201806291608520_Added users and lists.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201806291621132_built controllers.cs" />
+    <Compile Include="Migrations\201806291621132_built controllers.Designer.cs">
+      <DependentUpon>201806291621132_built controllers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\List.cs" />
     <Compile Include="Models\ToDoListDbContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\JsonResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -295,6 +300,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201806291608520_Added users and lists.resx">
       <DependentUpon>201806291608520_Added users and lists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201806291621132_built controllers.resx">
+      <DependentUpon>201806291621132_built controllers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
