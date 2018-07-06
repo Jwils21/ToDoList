@@ -1,5 +1,5 @@
 //add tasks for a user
-"option strict"
+"option strict";
 
 function create() {
 

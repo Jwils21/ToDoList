@@ -93,13 +93,13 @@ namespace ToDoList.Controllers
 		[HttpPost]
 		[ActionName("Remove")]
 		public JsonResponse Remove(List list) {
-			if(list == null) {
+			if (list == null) {
 				return new JsonResponse {
 					Result = "Failed",
-					Message = "Create requires an instance of List"
+					Message = "Remove requires an instance of List"
 				};
 			}
-			if(!ModelState.IsValid) {
+			if (!ModelState.IsValid) {
 				return new JsonResponse {
 					Result = "Failed",
 					Message = "Model state is invalid. See data.",
